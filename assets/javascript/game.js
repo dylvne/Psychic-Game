@@ -12,9 +12,9 @@ document.onkeyup = function(event){
         console.log(event.key);
         if(event.key == cpuLetter){
             wins ++;
-            tries = 10;
+            attempt = 10;
             wrongChoice = [];
-            var cpuLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
+            cpuLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
             alert("you win!");
         }
         else{
@@ -24,9 +24,9 @@ document.onkeyup = function(event){
         }
         if(attempt == 0){
             losses ++;
-            tries = 10;
+            attempt = 10;
             wrongChoice = [];
-            var cpuLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
+            cpuLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
             alert("you lose!");
         }
     }
